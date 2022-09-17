@@ -1,0 +1,16 @@
+.top-part {
+    background-color: #1a6baf;
+    padding: 4rem;
+}
+
+.tab-btn {
+    border: 0;
+    display: flex;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
