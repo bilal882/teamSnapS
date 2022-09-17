@@ -3,15 +3,15 @@ import React from 'react'
 export default function Table() {
     return (
         <div className='d-flex  flex-column align-items-center account'>
-            <ul className="nav nav-tabs d-block d-md-flex" id="myTab" role="tablist">
+            <ul className="nav nav-tabs" id="myTab" role="tablist">
                 <div role="presentation">
-                    <li className="tab d-block d-md-flex active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" role="tab" aria-controls="home-tab-pane" aria-selected="true">Manage My Teams</li>
+                    <li className="tab active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" role="tab" aria-controls="home-tab-pane" aria-selected="true">Manage My Teams</li>
                 </div>
                 <div role="presentation">
-                    <li className="tab d-block d-md-flex" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Team Billing & Plans</li>
+                    <li className="tab" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Team Billing & Plans</li>
                 </div>
                 <div role="presentation">
-                    <li className="tab d-block d-md-flex" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Club & League Plans</li>
+                    <li className="tab" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Club & League Plans</li>
                 </div>
             </ul>
             <div className="tab-content" id="myTabContent">
@@ -75,7 +75,7 @@ export default function Table() {
                         <button className="custom-btn mt-4">Back to Hasnat Team</button>
                     </div>
                 </div>
-                <div className="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div className="tab-pane fade" id="profile-tab-pane" role="tabpane1" aria-labelledby="profile-tab" tabindex="0">
                     <div className="container">
                         <div className="row">
                             <div className="col-12 col-md-8 col-lg-8 offset-lg-2 mt-2 offset-md-2">

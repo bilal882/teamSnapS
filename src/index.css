@@ -44,7 +44,7 @@
 
 .custom-btn-danger {
   box-shadow: none;
-  color: #383838;
+  color: #e26362;
   vertical-align: middle;
   margin: 0;
   height: 24px;
@@ -60,7 +60,36 @@
   border-style: solid;
 }
 
+
 .custom-btn-danger:hover {
   background-color: #e26362;
   color: white;
+}
+
+.custom-btn-success {
+  box-shadow: none;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+  height: 24px;
+  line-height: 21px;
+  border-width: 1px;
+  border-color: #d6d6d6;
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  padding: 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #7fc243;
+  border-style: solid;
+}
+
+
+/* Icon */
+
+.icon-cross {
+  border-radius: 100%;
+  border: 2px solid red;
+  color: red;
+  padding: 1rem 1.7rem;
 }

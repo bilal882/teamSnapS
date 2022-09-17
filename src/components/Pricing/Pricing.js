@@ -21,11 +21,11 @@ export default function Pricing() {
                 <div className="row">
                     <div className="col text-center">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="tab-btn active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                            <li class="nav-items1" role="presentation">
+                                <button class="tab-btn active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Monthly</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="tab-btn" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                            <li class="nav-items2" role="presentation">
+                                <button class="tab-btn" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Annual</button>
                             </li>
                         </ul>
                         <div class="tab-content mt-5" id="myTabContent">
