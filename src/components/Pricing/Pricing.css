@@ -78,3 +78,6 @@
     background-color: #1a6baf;
     width: 100%;
 }
+.text-start{
+    user-select: none;
+}
