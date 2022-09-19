@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./Pricing.css"
 
 export default function Pricing() {
-    const [monthlySetup, setMonthlySetup] = useState(true)
+    const [monthlySetup, setMonthlySetup] = useState(true);
     return (
         <>
             <div className="top-part text-white">
