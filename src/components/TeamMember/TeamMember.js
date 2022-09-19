@@ -20,7 +20,7 @@ export default function TeamMember() {
                                         <Link to="/findTeam" className="custom-btn-outline float-start"><i class="fa-solid fa-magnifying-glass me-2"></i>Find Your Team</Link>
                                     </div>
                                     <div className="w-50">
-                                        <button className="custom-btn-outline float-end"><i class="fa-solid fa-envelope me-2"></i>Invite Your Coach</button>
+                                        <Link to="/inviteCoach" className="custom-btn-outline float-end"><i class="fa-solid fa-envelope me-2"></i>Invite Your Coach</Link>
                                     </div>
                                 </div>
                             </div>

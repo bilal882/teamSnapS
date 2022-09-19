@@ -7,6 +7,7 @@ import SignUp from './components/Signup/SignUp';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import TeamMember from './components/TeamMember/TeamMember';
 import FindTeam from './components/FindTeam/FindTeam';
+import InviteCoach from './components/InvitCoach/InviteCoach';
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/" element={<SignUp />} />
           <Route path="/teamMember" element={<TeamMember />} />
           <Route path="/findTeam" element={<FindTeam />} />
+          <Route path="/inviteCoach" element={<InviteCoach />} />
         </Routes>
       </BrowserRouter>
     </>
