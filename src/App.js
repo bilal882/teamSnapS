@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import TeamMember from './components/TeamMember/TeamMember';
 import FindTeam from './components/FindTeam/FindTeam';
 import InviteCoach from './components/InvitCoach/InviteCoach';
+import Availability from './components/Availability/Availability';
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/teamMember" element={<TeamMember />} />
           <Route path="/findTeam" element={<FindTeam />} />
           <Route path="/inviteCoach" element={<InviteCoach />} />
+          <Route path="/availability" element={<Availability />} />
         </Routes>
       </BrowserRouter>
     </>

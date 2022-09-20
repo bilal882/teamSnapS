@@ -1,0 +1,17 @@
+.pink-color {
+    color: #fbad81;
+    font-size: 10px;
+}
+
+.availability {
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+.color-of-teamsnap {
+    color: #1a6baf;
+}
+.form-select{
+    box-shadow: none !important;
+    padding: 10px !important;
+}
