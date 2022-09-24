@@ -1,10 +1,11 @@
-import { isEditableInput } from '@testing-library/user-event/dist/utils';
 import React, { useState } from 'react';
 import "./Availability.css";
 
 export default function Availability() {
     const initialState = { DontPlay: false, DontPlayEvent: false }
     const [state, setState] = useState(initialState)
+    const [isShow, setIsShow] = useState(false)
+    const [icon, setIcon] = useState("")
     return (
         <div className='availability'>
             <div className="container">
@@ -29,7 +30,7 @@ export default function Availability() {
                                     <tr>
                                         <th className='w-50'></th>
                                         <th className='w-50'><i class="fa-solid fa-flag me-1 pink-color"></i><a href="javascript:void(0)" className='nav-link text-primary d-inline'>vs. sdfiojfisd</a>
-                                            <p className='mb-0'>Thu, Sep 15, 2022 6:00 AM</p></th>
+                                            <p className='mb-0 fw-normal'>Thu, Sep 15, 2022 6:00 AM</p></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -54,7 +55,7 @@ export default function Availability() {
                                     <tr>
                                         <th className='w-50'>Non-Players</th>
                                         <th className='w-50'><i class="fa-solid fa-flag me-1 pink-color"></i><a href="javascript:void(0)" className='nav-link text-primary d-inline'>vs. sdfiojfisd</a>
-                                            <p className='mb-0'>Thu, Sep 15, 2022 6:00 AM</p></th>
+                                            <p className='mb-0 fw-normal'>Thu, Sep 15, 2022 6:00 AM</p></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -72,7 +73,18 @@ export default function Availability() {
                                                 </div>
                                             </div>
                                         </th>
-                                        <td></td>
+                                        <td>
+                                            <div className="tooltips-btn">
+                                                <button className="custom-btn-success mt-3" onClick={() => { setIsShow(!isShow) }}>{!icon ? "None" : icon}
+                                                </button>
+                                                <div className={!isShow ? "tooltips hide" : "tooltips show"} style={{ top: "-30px" }}>
+                                                    <button className="custom-btn-success bg-green rounded-0 rounded-start" onClick={() => { setIcon(<i class="fa-solid fa-check"></i>); setIsShow(false) }}>Going</button>
+                                                    <button className="custom-btn-success bg-primary rounded-0" onClick={() => { setIcon(<i class="fa-solid fa-question"></i>); setIsShow(false) }}>Maybe</button>
+                                                    <button className="custom-btn-danger rounded-0" onClick={() => { setIcon(<i class="fa-solid fa-xmark"></i>); setIsShow(false) }}>No</button>
+                                                    <button className="custom-btn rounded-0 rounded-end" onClick={() => { setIcon(""); setIsShow(false) }}>Clear</button>
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -167,6 +179,6 @@ export default function Availability() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }

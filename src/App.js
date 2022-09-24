@@ -9,6 +9,7 @@ import TeamMember from './components/TeamMember/TeamMember';
 import FindTeam from './components/FindTeam/FindTeam';
 import InviteCoach from './components/InvitCoach/InviteCoach';
 import Availability from './components/Availability/Availability';
+import Profile from './components/Profile/Profile';
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/findTeam" element={<FindTeam />} />
           <Route path="/inviteCoach" element={<InviteCoach />} />
           <Route path="/availability" element={<Availability />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
     </>
