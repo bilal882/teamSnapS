@@ -6,7 +6,7 @@ export default function Profile() {
         <>
             <div className="container">
                 <div className="row">
-                    <div className="col-9">
+                    <div className="col-12 col-md-9">
                         <div className="row">
                             <div className="col-6"><h2 className='color-of-teamsnap'>Player</h2></div>
                             <div className="col-6 text-end">
@@ -74,10 +74,10 @@ export default function Profile() {
                         </div>
 
                     </div>
-                    <div className="col-3 text-center">
+                    <div className="col-12 col-md-3 text-center">
                         <div className="row">
                             <div className="col-12 col-lg-10">
-                                <select class="form-select w-75" aria-label="Default select example">
+                                <select class="form-select w-75 mt-3" aria-label="Default select example">
                                     <option selected>Alexis Mccray</option>
                                     <option value="1">usama Hardy</option>
                                     <option value="2">Illana Valenzuela</option>
