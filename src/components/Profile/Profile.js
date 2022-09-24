@@ -10,8 +10,8 @@ export default function Profile() {
                         <div className="row">
                             <div className="col-6"><h2 className='color-of-teamsnap'>Player</h2></div>
                             <div className="col-6 text-end">
-                                <button className="custom-btn me-2"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
-                                <button className="custom-btn-success"><i class="fa-solid fa-plus me-2"></i>Add Family Member</button>
+                                <button className="custom-btn me-2 mb-2 mb-md-0"><i class="fa-solid fa-pen-to-square me-2"></i>Edit</button>
+                                <button className="custom-btn-success mb-2 mb-md-0"><i class="fa-solid fa-plus me-2"></i>Add Family Member</button>
                             </div>
                         </div>
                         <div className="row">
